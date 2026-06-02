@@ -3,45 +3,106 @@ import Image from 'next/image';
 
 const CommitmentSection: React.FC = () => {
   return (
-    <section className="w-full bg-white flex justify-center py-8 sm:py-12 md:py-16 lg:py-20 font-sans overflow-hidden pb-12 sm:pb-16 md:pb-20 lg:pb-[120px]">
-      {/* Container matching your 1440px desktop grid. 
-        mx-auto ensures it stays perfectly centered on ultra-wide monitors.
-      */}
-      <div className="w-full max-w-full lg:max-w-[1440px] mx-auto relative flex flex-col lg:flex-row items-center justify-between gap-6 px-4 sm:px-6 md:px-8 lg:px-0">
+    <section className="w-full bg-white py-[40px] md:py-[60px] lg:py-[90px] overflow-visible">
 
-        
-        <div className="w-full border-y border-gray-200 py-6 sm:py-8 md:py-10 lg:py-[50px] pl-0 lg:pl-[90px] flex items-start flex-shrink-0">
-          
-          {/* Minimalist Horizontal Line Indicator */}
-          <div className="w-3 sm:w-4 md:w-5 lg:w-6 h-[1px] sm:h-[1px] md:h-[1.5px] lg:h-[2px] bg-[#0B2530] mt-2 sm:mt-3 md:mt-4 lg:mt-5 shrink-0 mr-3 sm:mr-3 md:mr-4 lg:mr-6"></div>
-          
-          {/* Paragraph Statement */}
-          <p 
-            className="text-[#0B2530] text-[14px] sm:text-[18px] md:text-[24px] lg:text-[32px] w-full m-0"
-            style={{ 
-              fontFamily: 'var(--font-lato), sans-serif',
-              fontWeight: 500,
-              lineHeight: '1.4'
-            }}
-          >
-            We are committed to helping our clients achieve their financial goals 
-            through expert advice, innovative solutions, and unparalleled execution.
-          </p>
+      {/* DESKTOP */}
+      <div className="hidden lg:block">
+        <div className="w-[970px] border-y border-[#E5E5E5]">
+
+          <div className="relative max-w-[1400px] mx-auto min-h-[300px] flex items-center">
+
+            <div className="pl-[110px] flex items-start max-w-[760px] z-10">
+
+              <div className="w-[32px] h-[2px] bg-[#0B2530] mt-[22px] mr-[28px] shrink-0" />
+
+              <p
+                className="
+                  text-[#0B2530]
+                  text-[32px]
+                  leading-[1.7]
+                  font-normal
+                  max-w-[760px]
+                "
+                style={{
+                  fontFamily: 'var(--font-lato), sans-serif',
+                }}
+              >
+                We are committed to helping our clients
+                achieve their financial goals through expert
+                advice, innovative solutions, and unparalleled
+                execution.
+              </p>
+            </div>
+
+            <div className="mt-[40px] absolute right-[-480px] top-1/2 -translate-y-1/2 pointer-events-none">
+              <Image
+                src="/assets/Rectangle 48.svg"
+                alt="3D Percentage Symbol"
+                width={620}
+                height={620}
+                priority
+                className="w-[520px] h-[520px] object-contain"
+              />
+            </div>
+
+          </div>
         </div>
-
-        {/* 3D Percentage Asset - Responsive */}
-        <div className="hidden lg:block relative w-full lg:w-[400px] xl:w-[450px] 2xl:w-[520px] h-auto flex-shrink-0 pointer-events-none">
-          <Image
-            src="/assets/Rectangle 48.svg" 
-            alt="3D Percentage Symbol"
-            width={520}
-            height={520}
-            className="w-full h-auto object-contain"
-            priority
-          />
-        </div>
-
       </div>
+
+      {/* MOBILE + TABLET */}
+      <div className="lg:hidden">
+        <div className="w-full border-y border-[#E5E5E5]">
+
+          <div className="px-5 sm:px-8 py-8 sm:py-12 flex">
+
+            <div className="flex items-start ">
+
+              {/* Line */}
+              <div className="mt-8 w-[6px] sm:w-[24px] h-[2px] bg-[#0B2530]  sm:mt-4 mr-2 sm:mr-5 shrink-0 flex-col" />
+
+              {/* Text */}
+              <p
+                className="
+                  pt-6
+                  text-[#0B2530]
+                  text-[11px]
+                  sm:text-[24px]
+                  leading-[1.7]
+                  font-normal
+                "
+                style={{
+                  fontFamily: 'var(--font-lato), sans-serif',
+                }}
+              >
+                We are committed to helping our clients
+                achieve their financial goals through expert
+                advice, innovative solutions, and unparalleled
+                execution.
+              </p>
+            </div>
+
+            {/* Image */}
+            <div className=" mt-1 flex items-start justify-start">
+              <Image
+                src="/assets/Rectangle 48.svg"
+                alt="3D Percentage Symbol"
+                width={320}
+                height={320}
+                className="
+                  w-[120px]
+                  h-[90px]
+                  sm:w-[300px]
+                  sm:h-[300px]
+                  object-contain
+                "
+              />
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
     </section>
   );
 };

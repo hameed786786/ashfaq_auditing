@@ -49,7 +49,7 @@ const processSteps = [
 
 export default function SimpleProcessSection() {
   return (
-    <section className="pl-[50px] w-full bg-[#F5F5F5] py-12 sm:py-16 md:py-20 lg:py-[120px] overflow-hidden">
+    <section className="lg:pl-[50px] w-full bg-[#F5F5F5] py-12 sm:py-16 md:py-20 lg:py-[120px] overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-4 md:px-6 lg:px-0">
         {/* Header */}
         <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-[100px]">

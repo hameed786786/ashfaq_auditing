@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section className="w-full bg-[#F8F8F8] py-12 sm:py-16 md:py-20 lg:py-[60px] overflow-hidden">
-      <div className="max-w-[1440px] lg:px-0">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
 
         {/* Top Row */}
         <div className="grid grid-cols-1 lg:grid-cols-[58%_42%] gap-4 md:gap-6 lg:gap-0 w-full">
@@ -21,7 +21,7 @@ export default function AboutSection() {
           </div>
 
           {/* About Us Title */}
-          <div className="border-t border-b border-[#E5E5E5] flex items-center justify-start h-[180px] sm:h-[220px] md:h-[260px] lg:h-[320px] w-[970px]">
+          <div className="border-t border-b border-[#E5E5E5] flex items-center justify-start h-[180px] sm:h-[220px] md:h-[260px] lg:h-[320px] w-full lg:w-[834px]">
             <h2
               className="text-[24px] sm:text-[32px] md:text-[48px] lg:text-[60px] font-medium tracking-[-0.02em] text-black px-26"
               style={{
@@ -35,7 +35,7 @@ export default function AboutSection() {
         </div>
 
         {/* Bottom Row */}
-        <div className="ml-0 md:ml-0 lg:ml-[60px] mt-6 sm:mt-8 md:mt-12 lg:mt-[80px] w-full grid grid-cols-1 lg:grid-cols-[24%_28%_48%] gap-6 md:gap-8 lg:gap-[20px]">
+        <div className="mt-6 sm:mt-8 md:mt-12 lg:mt-[80px] lg:ml-[60px] w-full grid grid-cols-1 lg:grid-cols-[24%_28%_48%] gap-6 md:gap-8 lg:gap-[20px]">
 
           {/* Mission / Vision */}
           <div>
@@ -102,7 +102,7 @@ export default function AboutSection() {
                 </h3>
 
                 <p
-                  className="text-[16px] leading-[180%] text-[#6B6B6B]"
+                  className="text-[14px] sm:text-[15px] md:text-[16px] leading-[180%] text-[#6B6B6B]"
                   style={{
                     fontFamily:
                       "var(--font-manrope), sans-serif",
@@ -132,7 +132,7 @@ export default function AboutSection() {
           {/* Content */}
           <div className="flex flex-col justify-center">
             <p
-              className="w-[567px] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[180%] text-[#6B6B6B]"
+              className="w-full lg:w-[567px] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[180%] text-[#6B6B6B]"
               style={{
                 fontFamily:
                   "var(--font-manrope), sans-serif",
