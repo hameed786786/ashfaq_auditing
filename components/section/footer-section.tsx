@@ -50,33 +50,33 @@ export default function Footer() {
           </div>
 
           {/* Right Column - Newsletter & Socials */}
-          <div className="flex flex-col lg:items-end">
+          <div className="flex flex-col lg:items-end w-full lg:w-auto">
             <div className="w-full lg:w-[450px]">
-              <p className="text-[13px] sm:text-[14px] md:text-[15px] text-white mb-3 sm:mb-4">
+              <p className="text-[12px] sm:text-[13px] md:text-[15px] text-white mb-3 sm:mb-4 lg:mb-5">
                 Enter your email to get our weekly newsletter
               </p>
 
               {/* Newsletter Input */}
-              <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center w-full h-auto sm:h-[60px] bg-[#222222] rounded-full p-1.5 border border-white/5 gap-2 sm:gap-0">
+              <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center w-full h-auto sm:h-[60px] bg-[#222222] rounded-full p-1.5 sm:p-1.5 border border-white/5 gap-1.5 sm:gap-0">
                 <input
                   type="email"
                   placeholder="Enter your email here"
-                  className="flex-1 h-[40px] sm:h-full bg-transparent px-3 sm:px-6 text-white text-[12px] sm:text-[15px] outline-none placeholder:text-[#888888]"
+                  className="flex-1 h-[36px] sm:h-full bg-transparent px-3 sm:px-6 text-white text-[11px] sm:text-[13px] md:text-[15px] outline-none placeholder:text-[#888888]"
                 />
-                <button className="h-[36px] sm:h-[45px] px-4 sm:px-8 bg-[#9B51E0] hover:bg-[#8A45C9] text-white text-[12px] sm:text-[15px] font-medium rounded-full transition-colors whitespace-nowrap">
+                <button className="h-[34px] sm:h-[45px] px-6 sm:px-8 bg-[#8759FF] hover:bg-[#7a4de6] text-white text-[11px] sm:text-[13px] md:text-[15px] font-medium rounded-full transition-colors whitespace-nowrap flex-shrink-0">
                   Join Now
                 </button>
               </div>
 
               {/* Social Icons */}
-              <div className="flex items-center gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12 lg:ml-2">
+              <div className="flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12 lg:ml-2">
                 <Link href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/assets/linkedin.svg"
                     alt="LinkedIn"
                     width={32}
                     height={32}
-                    className="w-[20px] sm:w-[24px] md:w-[28px] lg:w-[32px] h-[20px] sm:h-[24px] md:h-[28px] lg:h-[32px]"
+                    className="w-[18px] sm:w-[20px] md:w-[24px] lg:w-[32px] h-[18px] sm:h-[20px] md:h-[24px] lg:h-[32px]"
                   />
                 </Link>
                 <Link href="#" className="hover:opacity-80 transition-opacity">
@@ -85,7 +85,7 @@ export default function Footer() {
                     alt="Facebook"
                     width={16.79}
                     height={33.58}
-                    className="w-[12px] sm:w-[14px] md:w-[16px] lg:w-[16.79px] h-[24px] sm:h-[28px] md:h-[32px] lg:h-[33.58px]"
+                    className="w-[10px] sm:w-[12px] md:w-[14px] lg:w-[16.79px] h-[20px] sm:h-[24px] md:h-[28px] lg:h-[33.58px]"
                   />
                 </Link>
                 <Link href="#" className="hover:opacity-80 transition-opacity">
@@ -94,7 +94,7 @@ export default function Footer() {
                     alt="Twitter"
                     width={33.58}
                     height={26.87}
-                    className="w-[24px] sm:w-[28px] md:w-[30px] lg:w-[33.58px] h-[20px] sm:h-[22px] md:h-[24px] lg:h-[26.87px]"
+                    className="w-[20px] sm:w-[22px] md:w-[28px] lg:w-[33.58px] h-[16px] sm:h-[18px] md:h-[22px] lg:h-[26.87px]"
                   />
                 </Link>
                 <Link href="#" className="hover:opacity-80 transition-opacity">
@@ -103,7 +103,7 @@ export default function Footer() {
                     alt="Instagram"
                     width={33.58}
                     height={33.58}
-                    className="w-[20px] sm:w-[24px] md:w-[28px] lg:w-[33.58px] h-[20px] sm:h-[24px] md:h-[28px] lg:h-[33.58px]"
+                    className="w-[18px] sm:w-[20px] md:w-[24px] lg:w-[33.58px] h-[18px] sm:h-[20px] md:h-[24px] lg:h-[33.58px]"
                   />
                 </Link>
               </div>

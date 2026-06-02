@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* 2. Desktop Hero Content Container */}
-            <main className="relative w-full max-w-[1440px] px-4 sm:px-4 md:px-6 lg:px-0 pt-6 sm:pt-8 md:pt-12 lg:pt-16 flex flex-col items-center">
+            <main className="relative w-full max-w-[1440px] px-4  pt-6 sm:pt-8 md:pt-12 lg:pt-16 flex flex-col items-center">
 
                 {/* Typography Grid System - Locked to 1200px max width */}
                 <div className="relative w-full max-w-[1200px] text-[#0B2530] mb-6 sm:mb-6 md:mb-8 lg:mb-12">
@@ -87,17 +87,18 @@ const HeroSection: React.FC = () => {
                 </div>
 
                 {/* Hero Image Block - Locked to a specific width and centered */}
-                <div className="relative w-full max-w-[1320px] mt-[40px] sm:mt-[60px] md:mt-[80px] lg:mt-[80px]">
+                
+
+            </main>
+            <div className="relative w-full mt-[40px] sm:mt-[60px] md:mt-[70px] lg:mt-[70px] flex justify-end px-4 sm:px-4 md:px-0">
                     <Image
                         src="/assets/hero-architecture.png"
                         alt="Modern glass skyscraper architecture"
                         width={1320}
                         height={700}
-                        className="w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] object-cover object-bottom"
+                        className="w-full sm:w-full md:w-full lg:w-[1200px] h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] object-cover object-bottom"
                     />
                 </div>
-
-            </main>
         </div>
     );
 };

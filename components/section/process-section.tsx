@@ -49,7 +49,7 @@ const processSteps = [
 
 export default function SimpleProcessSection() {
   return (
-    <section className="w-full bg-[#F5F5F5] py-12 sm:py-16 md:py-20 lg:py-[120px] overflow-hidden">
+    <section className="pl-[50px] w-full bg-[#F5F5F5] py-12 sm:py-16 md:py-20 lg:py-[120px] overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-4 md:px-6 lg:px-0">
         {/* Header */}
         <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-[100px]">
@@ -74,7 +74,7 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 01 */}
-        <div className="grid grid-cols-1 lg:grid-cols-[58%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[40px] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[48%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center">
           {/* Left Image Card */}
           <div className="relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
@@ -222,7 +222,7 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 03 */}
-        <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-[80px] grid grid-cols-1 lg:grid-cols-[58%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[40px] items-center">
+        <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-[80px] grid grid-cols-1 lg:grid-cols-[48%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center">
           {/* Left Image Card */}
           <div className="relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
