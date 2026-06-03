@@ -89,8 +89,8 @@ const CommitmentSection: React.FC = () => {
                 width={320}
                 height={320}
                 className="
-                  w-[220px]
-                  h-[90px]
+                  w-[240px]
+                  h-[100px]
                   sm:w-[300px]
                   sm:h-[300px]
                   object-contain
