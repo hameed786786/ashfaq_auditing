@@ -126,7 +126,7 @@ export default function SimpleProcessSection() {
               alt="Calendar"
               width={312}
               height={312}
-              className="top-[-10px] relative z-10 w-[140px] sm:w-[155px] md:w-[145px] lg:w-[312px] h-[120px] sm:h-[155px] md:h-[145px] lg:h-[312px] object-contain"
+              className="top-[-10px] relative z-10 w-[180px] sm:w-[155px] md:w-[145px] lg:w-[312px] h-[120px] sm:h-[155px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
             <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
