@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center">
           <img src="/assets/Img - logo_margin.svg" alt="Logo" className="w-[36px] h-auto object-contain" />
           <p
-            className="ml-2 text-[14px] text-[#0B2530]"
+            className="ml-2 text-[15px] text-[#0B2530]"
             style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}
           >
             Ashfaq & Associates

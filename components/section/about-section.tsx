@@ -12,19 +12,19 @@ export default function AboutSection() {
 
           {/* Building Image (Fixed: order-2 on mobile to move it below text, added rounded corners) */}
           {/* Outer wrapper to handle the ordering and padding safely */}
-<div className="order-2 lg:order-1 w-full lg:w-[834px] mt-2 lg:mt-0 px-4 sm:px-6 md:px-8 lg:px-0">
-  
-  {/* Inner container to handle the sizing and rounded corners */}
-  <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[378px] overflow-hidden rounded-xl lg:rounded-none">
-    <Image
-      src="/assets/about-building.svg"
-      alt="About Building"
-      fill
-      className="object-cover"
-    />
-  </div>
+          <div className="order-2 lg:order-1 w-full lg:w-[834px] mt-2 lg:mt-0 px-4 sm:px-6 md:px-8 lg:px-0">
+            
+            {/* Inner container to handle the sizing and rounded corners */}
+            <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[378px] overflow-hidden rounded-xl lg:rounded-none">
+              <Image
+                src="/assets/about-building.svg"
+                alt="About Building"
+                fill
+                className="object-cover"
+              />
+            </div>
 
-</div>
+          </div>
 
           {/* About Us Title (Fixed: order-1 on mobile, centered text, fixed the sm:h-[20px] typo) */}
           <div className="order-1 lg:order-2 border-t border-b border-[#E5E5E5] flex items-center justify-center lg:justify-start h-[120px] sm:h-[120px] md:h-[160px] lg:h-[250px] w-full lg:w-[834px] ">
@@ -121,9 +121,22 @@ export default function AboutSection() {
               </p>
             </div>
 
+            {/* Mobile-Only Document Image (Placed straight after Mission and Vision sections) */}
+            {/* Mobile-Only Document Image (Placed straight after Mission and Vision sections) */}
+<div className="block md:hidden w-full my-4">
+  <div className="relative w-full h-[180px] sm:h-[220px] overflow-hidden rounded-2xl">
+    <Image
+      src="/assets/about-paperwork.svg"
+      alt="Accounting Documents"
+      fill
+      className="object-cover"
+    />
+  </div>
+</div>
+
           </div>
 
-          {/* Center Column: Image */}
+          {/* Center Column: Image (Desktop view untouched) */}
           <div className="hidden md:flex md:justify-center">
             <div className="relative md:w-[280px] lg:w-[323px] md:h-[350px] lg:h-[417px] overflow-hidden rounded-md">
               <Image
@@ -148,7 +161,7 @@ export default function AboutSection() {
               delivering clear, efficient, and compliant audit
               solutions. Our insight-driven approach strengthens
               governance, improves financial accuracy, and builds
-              stakeholder trust across Mainland, Free Zones, DIFC,
+              | stakeholder trust across Mainland, Free Zones, DIFC,
               and ADGM.
             </p>
 

@@ -58,7 +58,7 @@ const CommitmentSection: React.FC = () => {
             <div className="flex items-start ">
 
               {/* Line */}
-              <div className="mt-8 w-[6px] sm:w-[24px] h-[2px] bg-[#0B2530]  sm:mt-4 mr-2 sm:mr-5 shrink-0 flex-col" />
+              <div className="mt-8 w-[4px] sm:w-[24px] h-[2px] bg-[#0B2530]  sm:mt-4 mr-2 sm:mr-5 shrink-0 flex-col" />
 
               {/* Text */}
               <p
@@ -89,7 +89,7 @@ const CommitmentSection: React.FC = () => {
                 width={320}
                 height={320}
                 className="
-                  w-[120px]
+                  w-[220px]
                   h-[90px]
                   sm:w-[300px]
                   sm:h-[300px]

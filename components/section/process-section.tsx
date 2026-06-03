@@ -86,7 +86,7 @@ export default function SimpleProcessSection() {
               className="object-cover"
             />
 
-            {/* Overlay (Fixed: tightened padding and margins for mobile) */}
+            {/* Overlay */}
             <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-[12px] p-3 sm:p-4 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
               <h3
                 className="text-white text-[16px] sm:text-[20px] md:text-[26px] lg:text-[28px] leading-tight mb-1"
@@ -120,18 +120,18 @@ export default function SimpleProcessSection() {
           </div>
 
           {/* Right Step */}
-          <div className="order-1 lg:order-2 flex flex-col items-center justify-end h-full">
+          <div className="order-1 lg:order-2 flex flex-row-reverse lg:flex-col items-center justify-end lg:justify-end w-full h-auto lg:h-full gap-6 sm:gap-8 lg:gap-4">
             <Image
               src={processSteps[0].icon}
               alt="Calendar"
               width={312}
               height={312}
-              className="relative z-10 w-[200px] sm:w-[240px] md:w-[280px] lg:w-[312px] h-[200px] sm:h-[240px] md:h-[280px] lg:h-[312px] object-contain"
+              className="relative z-10 w-[105px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[105px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
-            <div className="relative z-20 w-full sm:w-[90%] md:w-[95%] lg:w-[532px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-3 mt-[-10px] sm:mt-[-15px] md:mt-[-18px] lg:mt-[-25px]">
+            <div className="relative z-20 w-[150px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
               <h3
-                className="text-[20px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black"
+                className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold text-black"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -139,7 +139,7 @@ export default function SimpleProcessSection() {
                 STEP 
               </h3>
               <span 
-                className="font-bold text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] text-black"
+                className="font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] text-black"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -154,18 +154,18 @@ export default function SimpleProcessSection() {
         <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[40%_52%] gap-6 sm:gap-8 md:gap-10 lg:gap-[10px] items-center lg:items-end">
           
           {/* Left Step */}
-          <div className="order-1 lg:order-1 flex flex-col items-center justify-end h-full">
+          <div className="order-1 lg:order-1 flex flex-row-reverse lg:flex-col items-center justify-end lg:justify-end w-full h-auto lg:h-full gap-6 sm:gap-8 lg:gap-4">
             <Image
               src={processSteps[1].icon}
               alt="Paperclip"
               width={312}
               height={312}
-              className="relative z-10 w-[200px] sm:w-[240px] md:w-[280px] lg:w-[312px] h-[200px] sm:h-[240px] md:h-[280px] lg:h-[312px] object-contain"
+              className="relative z-10 w-[105px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[105px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
-            <div className="relative z-20 w-full sm:w-[90%] md:w-[95%] lg:w-[532px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-3 mt-[-10px] sm:mt-[-15px] md:mt-[-18px] lg:mt-[-25px]">
+            <div className="relative z-20 w-[150px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
               <h3
-                className="text-[20px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black"
+                className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold text-black"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -173,7 +173,7 @@ export default function SimpleProcessSection() {
                 STEP 
               </h3>
               <span 
-                className="font-bold text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] text-black"
+                className="font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] text-black"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -273,18 +273,18 @@ export default function SimpleProcessSection() {
           </div>
 
           {/* Right Step */}
-          <div className="order-1 lg:order-2 flex flex-col items-center justify-end h-full">
+          <div className="order-1 lg:order-2 flex flex-row-reverse lg:flex-col items-center justify-end lg:justify-end w-full h-auto lg:h-full gap-6 sm:gap-8 lg:gap-4">
             <Image
               src={processSteps[2].icon}
               alt="Folder"
               width={312}
               height={312}
-              className="relative z-10 w-[200px] sm:w-[240px] md:w-[280px] lg:w-[312px] h-[200px] sm:h-[240px] md:h-[280px] lg:h-[312px] object-contain"
+              className="relative z-10 w-[155px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[155px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
-            <div className="relative z-20 w-full sm:w-[90%] md:w-[95%] lg:w-[532px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-3 mt-[-10px] sm:mt-[-15px] md:mt-[-18px] lg:mt-[-25px]">
+            <div className="relative z-20 w-[150px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
               <h3
-                className="text-[20px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black"
+                className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold text-black"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -292,7 +292,7 @@ export default function SimpleProcessSection() {
                 STEP 
               </h3>
               <span 
-                className="font-bold text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] text-black"
+                className="font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] text-black"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}

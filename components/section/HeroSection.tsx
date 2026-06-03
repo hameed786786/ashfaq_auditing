@@ -25,13 +25,13 @@ const HeroSection: React.FC = () => {
                     {/* Row 1: Left Text & Right Accent Statement (Fixed: Added flex-col-reverse for mobile order) */}
                     <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-1 md:gap-0">
                         <h1 
-                            className="text-[30px] sm:text-[48px] md:text-[60px] lg:text-[90px] font-normal leading-[1.1] md:leading-[120%] tracking-[-0.02em] md:tracking-[-2%] m-0"
+                            className="text-[35px] sm:text-[48px] md:text-[60px] lg:text-[90px] font-normal leading-[1.1] md:leading-[120%] tracking-[-0.02em] md:tracking-[-2%] m-0"
                             style={{ fontFamily: 'var(--font-lato), sans-serif' }}
                         >
                             OVERCOME LEGAL
                         </h1>
                         <span 
-                            className="text-[13px] tracking-widest text-[#0B2530]/70 md:text-[22px] lg:text-[32px] md:tracking-[-0.16px] md:text-black md:mt-[33px] text-left md:text-right"
+                            className="text-[15px] tracking-widest text-[#0B2530]/70 md:text-[22px] lg:text-[32px] md:tracking-[-0.16px] md:text-black md:mt-[33px] text-left md:text-right"
                             style={{ fontFamily: 'var(--font-lato), sans-serif' }}
                         >
                             COMMIT TO SUCCESS
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
                     {/* Row 2: Right-staggered Focal Text */}
                     <div className="w-full mt-0 sm:mt-2 md:mt-2 lg:mt-3 md:text-right">
                         <h1 
-                            className="inline-block text-[30px] sm:text-[48px] md:text-[60px] lg:text-[90px] font-normal leading-[1.1] md:leading-none tracking-[-0.02em] md:tracking-[-2%] m-0"
+                            className="inline-block text-[35px] sm:text-[48px] md:text-[60px] lg:text-[90px] font-normal leading-[1.1] md:leading-none tracking-[-0.02em] md:tracking-[-2%] m-0"
                             style={{ fontFamily: 'var(--font-lato), sans-serif' }}
                         >
                             OBSTACLES TO YOUR
@@ -51,21 +51,21 @@ const HeroSection: React.FC = () => {
                     {/* Row 3: Left-indented Terminus with Capsule Button */}
                     <div className="w-full mt-0 sm:mt-2 md:mt-3 lg:mt-5 md:pl-[60px] lg:pl-[120px] flex flex-col md:flex-row md:items-center gap-4 md:gap-0">
                         <h1 
-                            className="text-[30px] sm:text-[48px] md:text-[60px] lg:text-[90px] font-normal leading-[1.1] md:leading-none tracking-[-0.02em] md:tracking-[-2%] m-0"
+                            className="text-[35px] sm:text-[48px] md:text-[60px] lg:text-[90px] font-normal leading-[1.1] md:leading-none tracking-[-0.02em] md:tracking-[-2%] m-0"
                             style={{ fontFamily: 'var(--font-lato), sans-serif' }}
                         >
                             SUCCESS
                         </h1>
 
                         {/* Mobile-Optimized Interactive Button */}
-                        <div className="group relative bg-[#15161A] rounded-full cursor-pointer w-[110px] sm:w-[160px] md:w-[180px] lg:w-[229px] h-[32px] sm:h-[48px] md:h-[56px] lg:h-[64px] flex flex-row items-center justify-between px-[6px] transition-all ml-0 md:ml-3 lg:ml-7">
+                        <div className="group relative bg-[#15161A] rounded-full cursor-pointer w-[140px] sm:w-[160px] md:w-[180px] lg:w-[229px] h-[42px] sm:h-[48px] md:h-[56px] lg:h-[64px] flex flex-row items-center justify-between px-[6px] transition-all ml-0 md:ml-3 lg:ml-7">
                             <span 
-                                className="pl-3 sm:pl-6 text-white font-medium text-[10px] lg:text-[20px] z-10"
+                                className="pl-3 sm:pl-6 text-white font-medium text-[13px] lg:text-[20px] z-10"
                                 style={{ fontFamily: 'var(--font-clash-grotesk), sans-serif', fontWeight: 600 }}
                             >
                                 Contact us
                             </span>
-                            <div className="bg-white rounded-full w-[24px] sm:w-[40px] h-[24px] md:h-[48px] lg:h-[54px] lg:w-[54px] flex items-center justify-center transition-all duration-300 z-0">
+                            <div className="bg-white rounded-full w-[34px] sm:w-[40px] h-[34px] md:h-[48px] lg:h-[54px] lg:w-[54px] flex items-center justify-center transition-all duration-300 z-0">
                                 <img
                                     src="/assets/Vector.svg"
                                     alt="Arrow Right"

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className="w-full bg-white flex justify-center py-8 sm:py-12 md:py-16 lg:pt-24 font-sans overflow-hidden">
+    <section className="w-full bg-white flex justify-center py-4 sm:py-12 md:py-16 lg:pt-24 font-sans overflow-hidden pt-0">
       {/* 1440px Desktop Grid Container */}
       <div className="w-full max-w-[1440px] flex flex-col gap-6 sm:gap-10 md:gap-16 lg:gap-20 overflow-hidden mx-auto">
         
