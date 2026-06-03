@@ -18,6 +18,7 @@ export default function Home() {
       <ContactSection />
       <TestimonialSection />
       <Footer />
+      <Footer />
     </main>
   );
 }
