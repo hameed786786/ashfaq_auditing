@@ -75,11 +75,10 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 01 */}
-        {/* FIX: Changed lg:items-center to lg:items-end to perfectly align bottom edges */}
         <div className="grid grid-cols-1 lg:grid-cols-[48%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
           
           {/* Left Image Card */}
-          <div className="relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
+          <div className="order-2 lg:order-1 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
               src={processSteps[0].image}
               alt={processSteps[0].title}
@@ -87,10 +86,10 @@ export default function SimpleProcessSection() {
               className="object-cover"
             />
 
-            {/* Overlay */}
-            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-[12px] p-4 sm:p-5 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
+            {/* Overlay (Fixed: tightened padding and margins for mobile) */}
+            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-[12px] p-3 sm:p-4 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
               <h3
-                className="text-white text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-tight mb-1 sm:mb-2"
+                className="text-white text-[16px] sm:text-[20px] md:text-[26px] lg:text-[28px] leading-tight mb-1"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -99,7 +98,7 @@ export default function SimpleProcessSection() {
               </h3>
 
               <p
-                className="text-white/90 text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[150%]"
+                className="text-white/90 text-[10px] sm:text-[12px] md:text-[15px] lg:text-[16px] leading-[130%] sm:leading-[140%] md:leading-[150%] lg:leading-[150%]"
                 style={{
                   fontFamily: "var(--font-clash-grotesk-reg), sans-serif",
                 }}
@@ -107,13 +106,13 @@ export default function SimpleProcessSection() {
                 {processSteps[0].description}
               </p>
 
-              <div className="flex flex-wrap gap-x-3 sm:gap-x-4 md:gap-x-5 lg:gap-x-6 gap-y-2 mt-2 sm:mt-3">
+              <div className="flex flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-5 lg:gap-x-6 gap-y-1 mt-1 sm:mt-2 md:mt-3">
                 {processSteps[0].points.map((point) => (
                   <span
                     key={point}
-                    className="text-[11px] sm:text-[13px] md:text-[15px] lg:text-[16px] text-white font-light tracking-wide flex items-center gap-2"
+                    className="text-[9px] sm:text-[11px] md:text-[15px] lg:text-[16px] text-white font-light tracking-wide flex items-center gap-1 sm:gap-2"
                   >
-                    <span className="text-[14px] leading-none">•</span> {point}
+                    <span className="text-[10px] sm:text-[12px] md:text-[14px] leading-none">•</span> {point}
                   </span>
                 ))}
               </div>
@@ -121,8 +120,7 @@ export default function SimpleProcessSection() {
           </div>
 
           {/* Right Step */}
-          {/* FIX: justify-end forces the content to push to the bottom of the container */}
-          <div className="flex flex-col items-center justify-end h-full">
+          <div className="order-1 lg:order-2 flex flex-col items-center justify-end h-full">
             <Image
               src={processSteps[0].icon}
               alt="Calendar"
@@ -131,7 +129,6 @@ export default function SimpleProcessSection() {
               className="relative z-10 w-[200px] sm:w-[240px] md:w-[280px] lg:w-[312px] h-[200px] sm:h-[240px] md:h-[280px] lg:h-[312px] object-contain"
             />
 
-            {/* FIX: Restored negative margin to create the overlap effect and close the gap */}
             <div className="relative z-20 w-full sm:w-[90%] md:w-[95%] lg:w-[532px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-3 mt-[-10px] sm:mt-[-15px] md:mt-[-18px] lg:mt-[-25px]">
               <h3
                 className="text-[20px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black"
@@ -154,11 +151,10 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 02 */}
-        {/* FIX: Changed lg:items-center to lg:items-end */}
-        <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[42%_58%] gap-6 sm:gap-8 md:gap-10 lg:gap-[40px] items-center lg:items-end">
+        <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[40%_52%] gap-6 sm:gap-8 md:gap-10 lg:gap-[10px] items-center lg:items-end">
           
           {/* Left Step */}
-          <div className="order-2 lg:order-1 flex flex-col items-center justify-end h-full">
+          <div className="order-1 lg:order-1 flex flex-col items-center justify-end h-full">
             <Image
               src={processSteps[1].icon}
               alt="Paperclip"
@@ -167,7 +163,6 @@ export default function SimpleProcessSection() {
               className="relative z-10 w-[200px] sm:w-[240px] md:w-[280px] lg:w-[312px] h-[200px] sm:h-[240px] md:h-[280px] lg:h-[312px] object-contain"
             />
 
-            {/* FIX: Restored negative margin */}
             <div className="relative z-20 w-full sm:w-[90%] md:w-[95%] lg:w-[532px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-3 mt-[-10px] sm:mt-[-15px] md:mt-[-18px] lg:mt-[-25px]">
               <h3
                 className="text-[20px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black"
@@ -189,7 +184,7 @@ export default function SimpleProcessSection() {
           </div>
 
           {/* Right Image Card */}
-          <div className="order-1 lg:order-2 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-[4px] w-full shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
+          <div className="order-2 lg:order-2 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
               src={processSteps[1].image}
               alt={processSteps[1].title}
@@ -198,9 +193,9 @@ export default function SimpleProcessSection() {
             />
 
             {/* Overlay */}
-            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-md p-4 sm:p-5 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
+            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-md p-3 sm:p-4 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
               <h3
-                className="text-white text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-tight mb-1 sm:mb-2"
+                className="text-white text-[16px] sm:text-[20px] md:text-[26px] lg:text-[28px] leading-tight mb-1"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -209,7 +204,7 @@ export default function SimpleProcessSection() {
               </h3>
 
               <p
-                className="text-white/90 text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[150%]"
+                className="text-white/90 text-[10px] sm:text-[12px] md:text-[15px] lg:text-[16px] leading-[130%] sm:leading-[140%] md:leading-[150%] lg:leading-[150%]"
                 style={{
                   fontFamily: "var(--font-clash-grotesk-reg), sans-serif",
                 }}
@@ -217,13 +212,13 @@ export default function SimpleProcessSection() {
                 {processSteps[1].description}
               </p>
 
-              <div className="flex flex-wrap gap-x-3 sm:gap-x-4 md:gap-x-5 lg:gap-x-6 gap-y-2 mt-2 sm:mt-3">
+              <div className="flex flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-5 lg:gap-x-6 gap-y-1 mt-1 sm:mt-2 md:mt-3">
                 {processSteps[1].points.map((point) => (
                   <span
                     key={point}
-                    className="text-[11px] sm:text-[13px] md:text-[15px] lg:text-[16px] text-white/90 font-light tracking-wide flex items-center gap-2"
+                    className="text-[9px] sm:text-[11px] md:text-[15px] lg:text-[16px] text-white/90 font-light tracking-wide flex items-center gap-1 sm:gap-2"
                   >
-                    <span className="text-[14px] leading-none">•</span> {point}
+                    <span className="text-[10px] sm:text-[12px] md:text-[14px] leading-none">•</span> {point}
                   </span>
                 ))}
               </div>
@@ -232,11 +227,10 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 03 */}
-        {/* FIX: Changed lg:items-center to lg:items-end */}
-        <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[48%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
+        <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[44%_54%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
           
           {/* Left Image Card */}
-          <div className="relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
+          <div className="order-2 lg:order-1 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
               src={processSteps[2].image}
               alt={processSteps[2].title}
@@ -245,9 +239,9 @@ export default function SimpleProcessSection() {
             />
 
             {/* Overlay */}
-            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-md p-4 sm:p-5 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
+            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-md p-3 sm:p-4 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
               <h3
-                className="text-white text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-tight mb-1 sm:mb-2"
+                className="text-white text-[16px] sm:text-[20px] md:text-[26px] lg:text-[28px] leading-tight mb-1"
                 style={{
                   fontFamily: "var(--font-lato), sans-serif",
                 }}
@@ -256,7 +250,7 @@ export default function SimpleProcessSection() {
               </h3>
 
               <p
-                className="text-white text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[120%]"
+                className="text-white text-[10px] sm:text-[12px] md:text-[15px] lg:text-[16px] leading-[130%] sm:leading-[140%] md:leading-[150%] lg:leading-[120%]"
                 style={{
                   fontFamily: "var(--font-clash-grotesk-reg), sans-serif",
                   fontWeight: 400
@@ -265,13 +259,13 @@ export default function SimpleProcessSection() {
                 {processSteps[2].description}
               </p>
 
-              <div className="flex flex-wrap gap-x-3 sm:gap-x-4 md:gap-x-5 lg:gap-x-6 gap-y-2 mt-2 sm:mt-3">
+              <div className="flex flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-5 lg:gap-x-6 gap-y-1 mt-1 sm:mt-2 md:mt-3">
                 {processSteps[2].points.map((point) => (
                   <span
                     key={point}
-                    className="text-[11px] sm:text-[13px] md:text-[15px] lg:text-[16px] text-white/90 font-light tracking-wide flex items-center gap-2"
+                    className="text-[9px] sm:text-[11px] md:text-[15px] lg:text-[16px] text-white/90 font-light tracking-wide flex items-center gap-1 sm:gap-2"
                   >
-                    <span className="text-[14px] leading-none">•</span> {point}
+                    <span className="text-[10px] sm:text-[12px] md:text-[14px] leading-none">•</span> {point}
                   </span>
                 ))}
               </div>
@@ -279,7 +273,7 @@ export default function SimpleProcessSection() {
           </div>
 
           {/* Right Step */}
-          <div className="flex flex-col items-center justify-end h-full">
+          <div className="order-1 lg:order-2 flex flex-col items-center justify-end h-full">
             <Image
               src={processSteps[2].icon}
               alt="Folder"
@@ -288,7 +282,6 @@ export default function SimpleProcessSection() {
               className="relative z-10 w-[200px] sm:w-[240px] md:w-[280px] lg:w-[312px] h-[200px] sm:h-[240px] md:h-[280px] lg:h-[312px] object-contain"
             />
 
-            {/* FIX: Restored negative margin */}
             <div className="relative z-20 w-full sm:w-[90%] md:w-[95%] lg:w-[532px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-3 mt-[-10px] sm:mt-[-15px] md:mt-[-18px] lg:mt-[-25px]">
               <h3
                 className="text-[20px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-semibold text-black"

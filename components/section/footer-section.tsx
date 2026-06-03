@@ -7,10 +7,11 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#111111] text-white pt-8 md:pt-12 lg:pt-16 pb-6 md:pb-7 lg:pb-8 px-4 sm:px-4 md:px-5 lg:px-[100px] overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
+        
         {/* Top Navigation Row */}
         <div
           style={{ fontFamily: "var(--font-plus-jakarta-sans), sans-serif" }}
-          className="ml-0 md:ml-3 lg:ml-[40px] flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#FFFFFFCC] font-medium"
+          className="ml-0 md:ml-3 lg:ml-[40px] flex flex-col lg:flex-row lg:flex-wrap items-start lg:items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#FFFFFFCC] font-medium"
         >
           <Link href="/" className="hover:text-white transition-colors">
             Home
@@ -26,11 +27,11 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Main Footer Content */}
+        {/* Main Footer Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 justify-between">
 
           {/* Left Column - Company Info */}
-          <div className="w-full lg:w-[502px]">
+          <div className="order-1 lg:order-1 w-full lg:w-[502px] mt-4 lg:mt-0">
             <h2
               className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] mb-2 sm:mb-3 md:mb-4 lg:mb-6"
               style={{ fontFamily: "Times New Roman, serif" }}
@@ -50,25 +51,25 @@ export default function Footer() {
           </div>
 
           {/* Right Column - Newsletter & Socials */}
-          <div className="flex flex-col lg:items-end w-full lg:w-auto">
+          <div className="order-2 lg:order-2 flex flex-col items-start lg:items-end w-full lg:w-auto mt-6 lg:mt-0">
             <div className="w-full lg:w-[450px]">
               <p className="text-[12px] sm:text-[13px] md:text-[15px] text-white mb-3 sm:mb-4 lg:mb-5">
                 Enter your email to get our weekly newsletter
               </p>
 
               {/* Newsletter Input */}
-              <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center w-full h-auto sm:h-[60px] bg-[#222222] rounded-full p-1.5 sm:p-1.5 border border-white/5 gap-1.5 sm:gap-0">
+              <div className="relative flex flex-col lg:flex-row items-stretch lg:items-center w-full h-auto lg:h-[60px] bg-[#1A1A1A] lg:bg-[#222222] rounded-[24px] lg:rounded-full p-3.5 lg:p-1.5 border border-white/5 gap-3 lg:gap-0">
                 <input
                   type="email"
                   placeholder="Enter your email here"
-                  className="flex-1 h-[36px] sm:h-full bg-transparent px-3 sm:px-6 text-white text-[11px] sm:text-[13px] md:text-[15px] outline-none placeholder:text-[#888888]"
+                  className="w-full lg:flex-1 h-auto lg:h-full bg-transparent pt-1 pb-2 lg:py-0 px-1 lg:px-6 text-white text-[13px] md:text-[15px] outline-none placeholder:text-[#888888]"
                 />
-                <button className="h-[34px] sm:h-[45px] px-6 sm:px-8 bg-[#8759FF] hover:bg-[#7a4de6] text-white text-[11px] sm:text-[13px] md:text-[15px] font-medium rounded-full transition-colors whitespace-nowrap flex-shrink-0">
+                <button className="h-[46px] sm:h-[45px] w-full lg:w-auto px-6 sm:px-8 bg-[#8759FF] hover:bg-[#7a4de6] text-white text-[11px] sm:text-[13px] md:text-[15px] font-medium rounded-full transition-colors whitespace-nowrap flex-shrink-0 flex items-center justify-center tracking-wide">
                   Join Now
                 </button>
               </div>
 
-              {/* Social Icons */}
+              {/* Social Icons (Fixed: Rendered cleanly as a single row with no text labels on mobile) */}
               <div className="flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12 lg:ml-2">
                 <Link href="#" className="hover:opacity-80 transition-opacity">
                   <Image
@@ -107,6 +108,7 @@ export default function Footer() {
                   />
                 </Link>
               </div>
+
             </div>
           </div>
 

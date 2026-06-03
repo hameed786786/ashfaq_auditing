@@ -34,7 +34,7 @@ export default function ContactSection() {
       </div>
 
       {/* ================= Contact Form Section ================= */}
-      <div className="max-w-[1312px] mx-auto px-4 sm:px-5 py-[40px] lg:py-[80px]">
+      <div className="max-w-[1312px] mx-auto px-4 sm:px-0 py-[40px] lg:py-[80px]">
         {/* Heading */}
         <h2
           className="text-[32px] sm:text-[44px] lg:text-[60px] font-semibold text-black mb-[30px] lg:mb-[50px] w-full lg:w-[685px] h-auto lg:h-[72px]"

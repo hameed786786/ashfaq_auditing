@@ -361,7 +361,7 @@ export default function TestimonialSection() {
                     Slider layout without quote icon & matching background
                     ══════════════════════════════════ */}
                 <div className="flex sm:hidden justify-center px-4">
-                    <div className="bg-[#758090] rounded-[24px] p-5 pt-6 pb-8 w-full flex flex-col items-center">
+                    <div className="bg-[#bcc1c7] rounded-[24px] p-5 pt-6 pb-8 w-full flex flex-col items-center">
                         
                         {/* Slide Card */}
                         <div className="bg-white rounded-[24px] border  p-6 pt-8 pb-6 w-full shadow-[0px_4px_16px_rgba(0,0,0,0.02)] min-h-[260px] flex flex-col justify-between transition-all duration-300">
