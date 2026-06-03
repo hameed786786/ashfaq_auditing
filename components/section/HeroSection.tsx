@@ -79,13 +79,13 @@ const HeroSection: React.FC = () => {
             </main>
             
             {/* EXACT Original Hero Image Block - Left completely untouched */}
-            <div className="relative w-full mt-[40px] sm:mt-[60px] md:mt-[70px] lg:mt-[70px] flex justify-end px-4 sm:px-4 md:px-0">
+            <div className="relative w-full mt-[40px] sm:mt-[60px] md:mt-[70px] lg:mt-[70px] flex justify-end ">
                 <Image
                     src="/assets/hero-architecture.png"
                     alt="Modern glass skyscraper architecture"
                     width={1320}
                     height={700}
-                    className="w-full sm:w-full md:w-full lg:w-[1200px] h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] object-cover object-bottom"
+                    className="w-full sm:w-full md:w-full lg:w-[1320px] h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] object-cover object-bottom"
                 />
             </div>
         </div>

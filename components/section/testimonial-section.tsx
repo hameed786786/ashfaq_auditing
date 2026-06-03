@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 // Reusable SVG Star Component
 const Star = () => (
@@ -25,13 +26,38 @@ const StarsRow = () => (
 
 const cardShadow = "shadow-[0px_2px_16px_-4px_rgba(0,0,0,0.08)] border border-[#E5E7EB]";
 
+// Texts matching the exact lengths in the image to ensure correct card heights/alignment
 const commonText =
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.";
+
+const mediumText =
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt";
 
 const shortText =
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam";
 
+// Extracted data for the mobile slider including images
+const clientTestimonials = [
+    { name: "Istiak Ahmed", role: "CEO, Avito", src: "/assets/client-1.svg", text: commonText },
+    { name: "Jon Sari", role: "CEO, Avito", src: "/assets/client-1.1.svg", text: shortText },
+    { name: "Rahul Deb", role: "CEO, Avito", src: "/assets/client-2.svg", text: shortText },
+    { name: "Ahmed Saimoon", role: "CEO, Avito", src: "/assets/client-2.1.svg", text: commonText },
+    { name: "Sakib Mo", role: "CEO, Avito", src: "/assets/client-2.2.svg", text: commonText },
+    { name: "Nazmul Karim", role: "CEO, Avito", src: "/assets/client-3.svg", text: mediumText },
+    { name: "Amir Khan", role: "CEO, Avito", src: "/assets/client-3.1.svg", text: mediumText },
+];
+
 export default function TestimonialSection() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentIndex((prev) => (prev + 1) % clientTestimonials.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prev) => (prev - 1 + clientTestimonials.length) % clientTestimonials.length);
+    };
+
     return (
         <section className="w-full bg-white py-10 sm:py-14 lg:py-[80px] overflow-hidden">
             <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-0">
@@ -86,7 +112,7 @@ export default function TestimonialSection() {
 
                         {/* Card 2: Jon Sari – avatar row */}
                         <div className={`bg-white rounded-2xl p-4 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-center gap-3 mb-3">
                                 <div className="relative w-[42px] h-[42px] rounded-full overflow-hidden shrink-0 bg-gray-100">
                                     <Image
                                         src="/assets/client-1.1.svg"
@@ -109,7 +135,7 @@ export default function TestimonialSection() {
                             </div>
                             <p className="text-[#4B5563] text-[13px] leading-[170%]"
                                 style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                {commonText}
+                                {shortText}
                             </p>
                         </div>
                     </div>
@@ -142,7 +168,7 @@ export default function TestimonialSection() {
 
                         {/* Card 4: Ahmed Saimoon */}
                         <div className={`bg-white rounded-2xl p-5 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-center gap-3 mb-3">
                                 <div className="relative w-[46px] h-[46px] rounded-full overflow-hidden shrink-0 bg-gray-100">
                                     <Image
                                         src="/assets/client-2.1.svg"
@@ -158,7 +184,7 @@ export default function TestimonialSection() {
                                     </p>
                                     <p className="text-[#6B7280] text-[12px] mb-1.5"
                                         style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                        CEO, Figma
+                                        CEO, Avito
                                     </p>
                                     <StarsRow />
                                 </div>
@@ -171,7 +197,7 @@ export default function TestimonialSection() {
 
                         {/* Card 5: Sakib Mo */}
                         <div className={`bg-white rounded-2xl p-5 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-center gap-3 mb-3">
                                 <div className="relative w-[46px] h-[46px] rounded-full overflow-hidden shrink-0 bg-gray-100">
                                     <Image
                                         src="/assets/client-2.2.svg"
@@ -187,7 +213,7 @@ export default function TestimonialSection() {
                                     </p>
                                     <p className="text-[#6B7280] text-[12px] mb-1.5"
                                         style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                        CEO, Slack
+                                        CEO, Avito
                                     </p>
                                     <StarsRow />
                                 </div>
@@ -204,7 +230,7 @@ export default function TestimonialSection() {
 
                         {/* Card 6: Nazmul Karim */}
                         <div className={`bg-white rounded-2xl p-5 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-center gap-3 mb-3">
                                 <div className="relative w-[46px] h-[46px] rounded-full overflow-hidden shrink-0 bg-gray-100">
                                     <Image
                                         src="/assets/client-3.svg"
@@ -220,20 +246,20 @@ export default function TestimonialSection() {
                                     </p>
                                     <p className="text-[#6B7280] text-[12px] mb-1.5"
                                         style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                        CEO, Dribbble
+                                        CEO, Avito
                                     </p>
                                     <StarsRow />
                                 </div>
                             </div>
                             <p className="text-[#4B5563] text-[13px] leading-[170%]"
                                 style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                {commonText}
+                                {mediumText}
                             </p>
                         </div>
 
                         {/* Card 7: Amir Khan */}
                         <div className={`bg-white rounded-2xl p-5 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-center gap-3 mb-3">
                                 <div className="relative w-[46px] h-[46px] rounded-full overflow-hidden shrink-0 bg-gray-100">
                                     <Image
                                         src="/assets/client-3.1.svg"
@@ -249,14 +275,14 @@ export default function TestimonialSection() {
                                     </p>
                                     <p className="text-[#6B7280] text-[12px] mb-1.5"
                                         style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                        CEO, Stripe
+                                        CEO, Avito
                                     </p>
                                     <StarsRow />
                                 </div>
                             </div>
                             <p className="text-[#4B5563] text-[13px] leading-[170%]"
                                 style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}>
-                                {commonText}
+                                {mediumText}
                             </p>
                         </div>
                     </div>
@@ -308,14 +334,14 @@ export default function TestimonialSection() {
 
                     {/* Cards 2, 4, 5, 6, 7 – avatar style */}
                     {[
-                        { name: "Jon Sari",      role: "CEO, Avito",    src: "/assets/client-1.1.svg" },
-                        { name: "Ahmed Saimoon", role: "CEO, Figma",    src: "/assets/client-2.1.svg" },
-                        { name: "Sakib Mo",      role: "CEO, Slack",    src: "/assets/client-2.2.svg" },
-                        { name: "Nazmul Karim",  role: "CEO, Dribbble", src: "/assets/client-3.svg"   },
-                        { name: "Amir Khan",     role: "CEO, Stripe",   src: "/assets/client-3.1.svg" },
-                    ].map(({ name, role, src }) => (
+                        { name: "Jon Sari",      role: "CEO, Avito", src: "/assets/client-1.1.svg", text: shortText },
+                        { name: "Ahmed Saimoon", role: "CEO, Avito", src: "/assets/client-2.1.svg", text: commonText },
+                        { name: "Sakib Mo",      role: "CEO, Avito", src: "/assets/client-2.2.svg", text: commonText },
+                        { name: "Nazmul Karim",  role: "CEO, Avito", src: "/assets/client-3.svg",   text: mediumText },
+                        { name: "Amir Khan",     role: "CEO, Avito", src: "/assets/client-3.1.svg", text: mediumText },
+                    ].map(({ name, role, src, text }) => (
                         <div key={name} className={`bg-white rounded-2xl p-4 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-center gap-3 mb-3">
                                 <div className="relative w-[40px] h-[40px] rounded-full overflow-hidden shrink-0 bg-gray-100">
                                     <Image src={src} alt={name} fill className="object-cover" />
                                 </div>
@@ -325,77 +351,80 @@ export default function TestimonialSection() {
                                     <StarsRow />
                                 </div>
                             </div>
-                            <p className="text-[#4B5563] text-[13px] leading-[165%]">{commonText}</p>
+                            <p className="text-[#4B5563] text-[13px] leading-[165%]">{text}</p>
                         </div>
                     ))}
                 </div>
 
                 {/* ══════════════════════════════════
                     MOBILE LAYOUT  (< sm)
-                    Single column, full-width cards
+                    Slider layout without quote icon & matching background
                     ══════════════════════════════════ */}
-                <div className="flex sm:hidden flex-col gap-4">
+                <div className="flex sm:hidden justify-center px-4">
+                    <div className="bg-[#758090] rounded-[24px] p-5 pt-6 pb-8 w-full flex flex-col items-center">
+                        
+                        {/* Slide Card */}
+                        <div className="bg-white rounded-[24px] border  p-6 pt-8 pb-6 w-full shadow-[0px_4px_16px_rgba(0,0,0,0.02)] min-h-[260px] flex flex-col justify-between transition-all duration-300">
+                            
+                            {/* Quote Text */}
+                            <p 
+                                className="text-black text-[15px] leading-[1.8] mb-8"
+                                style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}
+                            >
+                                "{clientTestimonials[currentIndex].text}"
+                            </p>
 
-                    {/* Card 1: Istiak Ahmed – image fills width via aspect ratio */}
-                    <div className={`bg-white rounded-2xl overflow-hidden ${cardShadow}`}>
-                        <div className="relative w-full aspect-[4/3]">
-                            <Image
-                                src="/assets/client-1.svg"
-                                alt="Istiak Ahmed"
-                                fill
-                                className="object-cover object-top"
-                                sizes="100vw"
-                            />
-                        </div>
-                        <div className="p-4">
-                            <p className="text-[#4B5563] text-sm leading-[170%] mb-3">{commonText}</p>
-                            <p className="text-[#111827] text-[13px] font-bold">Istiak Ahmed</p>
-                            <p className="text-[#6B7280] text-[12px] mb-2">CEO, Avito</p>
-                            <StarsRow />
-                        </div>
-                    </div>
-
-                    {/* Card 3: Rahul Deb – side-by-side, fixed image width */}
-                    <div className={`bg-white rounded-2xl overflow-hidden ${cardShadow} flex`}>
-                        <div className="relative shrink-0 w-[120px] self-stretch">
-                            <Image
-                                src="/assets/client-2.svg"
-                                alt="Rahul Deb"
-                                fill
-                                className="object-cover object-top"
-                                sizes="120px"
-                            />
-                        </div>
-                        <div className="flex flex-col justify-center px-4 py-4 flex-1 min-w-0">
-                            <p className="text-[#4B5563] text-[12px] leading-[165%] mb-3">{shortText}</p>
-                            <p className="text-[#111827] text-[13px] font-bold">Rahul Deb</p>
-                            <p className="text-[#6B7280] text-[12px] mb-2">CEO, Avito</p>
-                            <StarsRow />
-                        </div>
-                    </div>
-
-                    {/* Cards 2, 4, 5, 6, 7 – avatar style stacked */}
-                    {[
-                        { name: "Jon Sari",      role: "CEO, Avito",    src: "/assets/client-1.1.svg" },
-                        { name: "Ahmed Saimoon", role: "CEO, Figma",    src: "/assets/client-2.1.svg" },
-                        { name: "Sakib Mo",      role: "CEO, Slack",    src: "/assets/client-2.2.svg" },
-                        { name: "Nazmul Karim",  role: "CEO, Dribbble", src: "/assets/client-3.svg"   },
-                        { name: "Amir Khan",     role: "CEO, Stripe",   src: "/assets/client-3.1.svg" },
-                    ].map(({ name, role, src }) => (
-                        <div key={name} className={`bg-white rounded-2xl p-4 ${cardShadow}`}>
-                            <div className="flex items-start gap-3 mb-3">
-                                <div className="relative w-[42px] h-[42px] rounded-full overflow-hidden shrink-0 bg-gray-100">
-                                    <Image src={src} alt={name} fill className="object-cover" sizes="42px" />
+                            {/* Author Info with Image */}
+                            <div className="flex items-center gap-3">
+                                <div className="relative w-[48px] h-[48px] rounded-full overflow-hidden shrink-0 bg-gray-100">
+                                    <Image
+                                        src={clientTestimonials[currentIndex].src}
+                                        alt={clientTestimonials[currentIndex].name}
+                                        fill
+                                        className="object-cover object-top"
+                                        sizes="48px"
+                                    />
                                 </div>
                                 <div>
-                                    <p className="text-[#111827] text-[13px] font-bold">{name}</p>
-                                    <p className="text-[#6B7280] text-[12px] mb-1.5">{role}</p>
-                                    <StarsRow />
+                                    <p 
+                                        className="text-[16px] font-bold text-black mb-0.5" 
+                                        style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+                                    >
+                                        {clientTestimonials[currentIndex].name}
+                                    </p>
+                                    <p 
+                                        className="text-[#6B7280] text-[13px]"
+                                        style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 400 }}
+                                    >
+                                        {clientTestimonials[currentIndex].role}
+                                    </p>
                                 </div>
                             </div>
-                            <p className="text-[#4B5563] text-sm leading-[170%]">{commonText}</p>
                         </div>
-                    ))}
+
+                        {/* Navigation Controls */}
+                        <div className="flex gap-4 justify-center mt-8">
+                            <button 
+                                onClick={prevSlide} 
+                                className="w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:bg-gray-50 transition-colors"
+                                aria-label="Previous Testimonial"
+                            >
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 1L1 6L6 11" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </button>
+                            <button 
+                                onClick={nextSlide} 
+                                className="w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:bg-gray-50 transition-colors"
+                                aria-label="Next Testimonial"
+                            >
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L6 6L1 11" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>

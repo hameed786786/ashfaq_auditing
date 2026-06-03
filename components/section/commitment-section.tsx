@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const CommitmentSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-[40px] md:py-[60px] lg:py-[90px] overflow-visible">
+    <section className="w-full bg-white py-[40px] md:py-[60px] lg:py-[120px] overflow-visible">
 
       {/* DESKTOP */}
       <div className="hidden lg:block">
@@ -11,17 +11,17 @@ const CommitmentSection: React.FC = () => {
 
           <div className="relative max-w-[1400px] mx-auto min-h-[300px] flex items-center">
 
-            <div className="pl-[110px] flex items-start max-w-[760px] z-10">
+            <div className="pl-[180px] flex items-start max-w-[760px] z-10">
 
-              <div className="w-[32px] h-[2px] bg-[#0B2530] mt-[22px] mr-[28px] shrink-0" />
+              <div className="w-[22px] h-[2px] bg-[#0B2530] mt-[22px] mr-[28px] shrink-0" />
 
               <p
                 className="
                   text-[#0B2530]
                   text-[32px]
-                  leading-[1.7]
+                  leading-[130%]
                   font-normal
-                  max-w-[760px]
+                  w-[600px]
                 "
                 style={{
                   fontFamily: 'var(--font-lato), sans-serif',
@@ -34,12 +34,12 @@ const CommitmentSection: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-[40px] absolute right-[-480px] top-1/2 -translate-y-1/2 pointer-events-none">
+            <div className="mt-[40px] absolute right-[-460px] top-1/2 -translate-y-1/2 pointer-events-none">
               <Image
                 src="/assets/Rectangle 48.svg"
                 alt="3D Percentage Symbol"
-                width={620}
-                height={620}
+                width={520}
+                height={520}
                 priority
                 className="w-[520px] h-[520px] object-contain"
               />
