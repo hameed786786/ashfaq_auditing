@@ -126,10 +126,10 @@ export default function SimpleProcessSection() {
               alt="Calendar"
               width={312}
               height={312}
-              className="relative z-10 w-[150px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[105px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
+              className="relative z-10 w-[100px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[85px] sm:h-[125px] md:h-[145px] lg:h-[312px] "
             />
 
-            <div className="relative z-20 w-[150px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
+            <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
               <h3
                 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold text-black"
                 style={{
@@ -160,10 +160,10 @@ export default function SimpleProcessSection() {
               alt="Paperclip"
               width={312}
               height={312}
-              className="relative z-10 w-[150px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[105px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
+              className="relative z-10 w-[100px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[85px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
-            <div className="relative z-20 w-[150px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
+            <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
               <h3
                 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold text-black"
                 style={{
@@ -279,10 +279,10 @@ export default function SimpleProcessSection() {
               alt="Folder"
               width={312}
               height={312}
-              className="relative z-10 w-[150px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[105px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
+              className="relative z-10 w-[100px] sm:w-[25px] md:w-[145px] lg:w-[312px] h-[85px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
-            <div className="relative z-20 w-[150px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
+            <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
               <h3
                 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] font-semibold text-black"
                 style={{
