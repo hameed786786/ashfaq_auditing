@@ -75,10 +75,10 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 01 */}
-        <div className="grid grid-cols-1 lg:grid-cols-[48%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
+        <div className="mt-[-20px] grid grid-cols-1 lg:grid-cols-[48%_42%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
           
           {/* Left Image Card */}
-          <div className="order-2 lg:order-1 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
+          <div className="top-[-30px] order-2 lg:order-1 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
               src={processSteps[0].image}
               alt={processSteps[0].title}
@@ -126,7 +126,7 @@ export default function SimpleProcessSection() {
               alt="Calendar"
               width={312}
               height={312}
-              className="relative z-10 w-[100px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[85px] sm:h-[125px] md:h-[145px] lg:h-[312px] "
+              className="top-[-10px] relative z-10 w-[140px] sm:w-[155px] md:w-[145px] lg:w-[312px] h-[120px] sm:h-[155px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
             <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
@@ -151,7 +151,7 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 02 */}
-        <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[40%_52%] gap-6 sm:gap-8 md:gap-10 lg:gap-[10px] items-center lg:items-end">
+        <div className="mt-[-30px] sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[40%_52%] gap-6 sm:gap-8 md:gap-10 lg:gap-[10px] items-center lg:items-end">
           
           {/* Left Step */}
           <div className="order-1 lg:order-1 flex flex-row-reverse lg:flex-col items-center justify-end lg:justify-end w-full h-auto lg:h-full gap-6 sm:gap-8 lg:gap-4">
@@ -160,7 +160,7 @@ export default function SimpleProcessSection() {
               alt="Paperclip"
               width={312}
               height={312}
-              className="relative z-10 w-[100px] sm:w-[125px] md:w-[145px] lg:w-[312px] h-[85px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
+              className="top-[-1px] relative z-10 w-[140px] sm:w-[155px] md:w-[145px] lg:w-[312px] h-[140px] sm:h-[155px] md:h-[105px] lg:h-[312px] object-contain"
             />
 
             <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
@@ -184,7 +184,7 @@ export default function SimpleProcessSection() {
           </div>
 
           {/* Right Image Card */}
-          <div className="order-2 lg:order-2 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
+          <div className="top-[-30px] order-2 lg:order-2 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
               src={processSteps[1].image}
               alt={processSteps[1].title}
@@ -227,10 +227,10 @@ export default function SimpleProcessSection() {
         </div>
 
         {/* STEP 03 */}
-        <div className="mt-8 sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[44%_54%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
+        <div className="mt-[-30px] sm:mt-10 md:mt-16 lg:mt-[100px] grid grid-cols-1 lg:grid-cols-[44%_54%] gap-6 sm:gap-8 md:gap-10 lg:gap-[60px] items-center lg:items-end">
           
           {/* Left Image Card */}
-          <div className="order-2 lg:order-1 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
+          <div className="top-[-30px] order-2 lg:order-1 relative h-[250px] sm:h-[300px] md:h-[380px] lg:h-[458px] overflow-hidden rounded-xl lg:rounded-[4px] w-full lg:w-[737px] shadow-[0px_1px_7px_0px_#00000029,0px_1px_9px_0px_#0000002E]">
             <Image
               src={processSteps[2].image}
               alt={processSteps[2].title}
@@ -239,7 +239,7 @@ export default function SimpleProcessSection() {
             />
 
             {/* Overlay */}
-            <div className="h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-md p-3 sm:p-4 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
+            <div className=" h-auto sm:h-auto md:h-[140px] lg:h-[158px] w-full absolute bottom-0 left-0 border-t border-white/40 bg-white/10 backdrop-blur-md p-3 sm:p-4 md:p-6 lg:px-[40px] lg:py-[24px] flex flex-col justify-center">
               <h3
                 className="text-white text-[16px] sm:text-[20px] md:text-[26px] lg:text-[28px] leading-tight mb-1"
                 style={{
@@ -279,7 +279,7 @@ export default function SimpleProcessSection() {
               alt="Folder"
               width={312}
               height={312}
-              className="relative z-10 w-[100px] sm:w-[25px] md:w-[145px] lg:w-[312px] h-[85px] sm:h-[125px] md:h-[145px] lg:h-[312px] object-contain"
+              className="top-[-10px] relative z-10 w-[140px] sm:w-[155px] md:w-[145px] lg:w-[312px] h-[140px] sm:h-[155px] md:h-[145px] lg:h-[312px] object-contain"
             />
 
             <div className="relative z-20 w-[280px] sm:w-[180px] md:w-[220px] lg:w-[532px] h-[64px] sm:h-[72px] md:h-[90px] lg:h-[138px] border border-[#D9D9D9] flex items-center justify-center bg-white gap-2 lg:gap-3 mt-0 lg:mt-[-25px]">
